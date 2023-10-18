@@ -45,7 +45,7 @@ tour_edges = [(optimal_tour[i], optimal_tour[i + 1]) for i in range(len(optimal_
 tour_edges.append((optimal_tour[-1], optimal_tour[0]))
 
 plt.figure(figsize=(8, 6))
-# nx.draw(G, pos, node_size=20)
+nx.draw(G, pos, node_size=20)
 nx.draw_networkx_edges(G, pos, edgelist=tour_edges, edge_color='b', width=2)
 plt.title("Optimal TSP Tour")
 plt.show()
